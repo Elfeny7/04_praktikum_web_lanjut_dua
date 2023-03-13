@@ -7,5 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-   
+    public static function getBySlug($slug)
+    {
+        return Student::where([
+            'slug' => $slug,
+        ])->first();
+    }
 }

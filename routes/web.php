@@ -17,7 +17,7 @@ Route::get('/', [App\Http\Controllers\DashboardController::class, 'redirect']);
 
 Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
 
-Route::get('/profil/{id?}', [App\Http\Controllers\ProfilController::class, 'index'])->name('profil');
+Route::get('/profil/{slug}', [App\Http\Controllers\StudentController::class, 'index'])->name('profil');
 
 Route::get('/pengalaman-kuliah', [App\Http\Controllers\PengalamanKuliahController::class, 'index'])->name('pengalamanKuliah');
 

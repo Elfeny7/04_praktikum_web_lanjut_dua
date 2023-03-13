@@ -51,13 +51,13 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="{{Route('profil', ['id'=>'ikmal'])}}" class="nav-link {{$ikmal}}">
+                                <a href="{{Route('profil', ['slug'=>'ikmal'])}}" class="nav-link {{$ikmal}}">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Ikmal Faris</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{Route('profil', ['id'=>'arainal'])}}" class="nav-link {{$arainal}}">
+                                <a href="{{Route('profil', ['slug'=>'arainal'])}}" class="nav-link {{$arainal}}">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Arainal Aldiansyah</p>
                                 </a>
