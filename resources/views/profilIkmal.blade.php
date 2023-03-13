@@ -36,19 +36,19 @@
                 <img class="profile-user-img img-fluid img-circle" src="{{asset('AdminLTE-3.2.0')}}/dist/img/ikmal.jpg" alt="User profile picture">
               </div>
 
-              <h3 class="profile-username text-center">Ikmal Faris Musyaffa</h3>
+              <h3 class="profile-username text-center">{{$student->name}}</h3>
 
               <p class="text-muted text-center">Mahasiswa</p>
 
               <ul class="list-group list-group-unbordered mb-3">
                 <li class="list-group-item">
-                  <b>Kelas</b> <a class="float-right">TI-2G</a>
+                  <b>Kelas</b> <a class="float-right">{{$student->class}}</a>
                 </li>
                 <li class="list-group-item">
-                  <b>Nomor</b> <a class="float-right">15</a>
+                  <b>Nomor</b> <a class="float-right">{{$student->number}}</a>
                 </li>
                 <li class="list-group-item">
-                  <b>NIM</b> <a class="float-right">2141720123</a>
+                  <b>NIM</b> <a class="float-right">{{$student->sin}}</a>
                 </li>
               </ul>
 
@@ -68,14 +68,14 @@
               <strong><i class="fas fa-book mr-1"></i> Tempat, Tanggal Lahir</strong>
 
               <p class="text-muted">
-                Kediri, 07 Oktober 2002
+                {{$student->birth}}
               </p>
 
               <hr>
 
               <strong><i class="fas fa-map-marker-alt mr-1"></i> Alamat</strong>
 
-              <p class="text-muted">Perumahan Tugurejo Indah G-4 Ds.Tugurejo Kec.Ngasem Kab.Kediri Jawa Timur Indonesia</p>
+              <p class="text-muted">{{$student->address}}</p>
 
               <hr>
 
@@ -92,7 +92,7 @@
 
               <strong><i class="far fa-file-alt mr-1"></i> Hobi</strong>
 
-              <p class="text-muted">Gacha, Game</p>
+              <p class="text-muted">{{$student->hobby}}</p>
             </div>
             <!-- /.card-body -->
           </div>
@@ -191,23 +191,20 @@
 
                 <div class="tab-pane" id="settings">
                   <form class="form-horizontal">
-
-
-
                     <div class="form-group row">
                       <div class="col-sm-12">
                         <textarea class="form-control" id="inputExperience" placeholder="Tulis sesuatu untuk dipost"></textarea>
                       </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-sm-10">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> Post publicly</a>
-                            </label>
-                          </div>
+                      <div class="col-sm-10">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Post publicly</a>
+                          </label>
                         </div>
                       </div>
+                    </div>
                     <div class="form-group row">
                       <div class="col-sm-10">
                         <button type="submit" class="btn btn-danger">Post</button>
