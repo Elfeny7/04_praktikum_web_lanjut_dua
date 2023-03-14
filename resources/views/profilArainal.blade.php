@@ -36,19 +36,19 @@
                 <img class="profile-user-img img-fluid img-circle" src="{{asset('AdminLTE-3.2.0')}}/dist/img/arainal.jpg" alt="User profile picture">
               </div>
 
-              <h3 class="profile-username text-center">Arainal Aldiansyah</h3>
+              <h3 class="profile-username text-center">{{$student->name}}</h3>
 
               <p class="text-muted text-center">Mahasiswa</p>
 
               <ul class="list-group list-group-unbordered mb-3">
                 <li class="list-group-item">
-                  <b>Kelas</b> <a class="float-right">TI-2G</a>
+                  <b>Kelas</b> <a class="float-right">{{$student->class}}</a>
                 </li>
                 <li class="list-group-item">
-                  <b>Nomor</b> <a class="float-right">05</a>
+                  <b>Nomor</b> <a class="float-right">{{$student->number}}</a>
                 </li>
                 <li class="list-group-item">
-                  <b>NIM</b> <a class="float-right">2141720042</a>
+                  <b>NIM</b> <a class="float-right">{{$student->sin}}</a>
                 </li>
               </ul>
 
@@ -68,14 +68,14 @@
               <strong><i class="fas fa-book mr-1"></i> Tempat, Tanggal Lahir</strong>
 
               <p class="text-muted">
-                Kediri, 01 Desember 2002
+              {{$student->birth}}
               </p>
 
               <hr>
 
               <strong><i class="fas fa-map-marker-alt mr-1"></i> Alamat</strong>
 
-              <p class="text-muted">Mojo, Kediri, Jawa Timur</p>
+              <p class="text-muted">{{$student->address}}</p>
 
               <hr>
 
@@ -92,7 +92,7 @@
 
               <strong><i class="far fa-file-alt mr-1"></i> Hobi</strong>
 
-              <p class="text-muted">Game</p>
+              <p class="text-muted">{{$student->hobby}}</p>
             </div>
             <!-- /.card-body -->
           </div>
@@ -115,7 +115,7 @@
                     <div class="user-block">
                       <img class="img-circle img-bordered-sm" src="{{asset('AdminLTE-3.2.0')}}/dist/img/arainal.jpg" alt="user image">
                       <span class="username">
-                        <a href="#">Arainal Aldiansyah</a>
+                        <a href="#">{{$student->name}}</a>
                         <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                       </span>
                       <span class="description">Shared publicly - 7:45 PM today</span>
@@ -142,7 +142,7 @@
                     <div class="user-block">
                       <img class="img-circle img-bordered-sm" src="{{asset('AdminLTE-3.2.0')}}/dist/img/arainal.jpg" alt="user image">
                       <span class="username">
-                        <a href="#">Arainal Aldiansyah</a>
+                        <a href="#">{{$student->hobby}}</a>
                         <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                       </span>
                       <span class="description">Shared publicly - 5 days ago</span>
